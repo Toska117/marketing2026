@@ -1,0 +1,201 @@
+
+:root {
+  --lavender-mist: #F2EAF7;
+  --lavender-soft: #D2B7E3;
+  --violet-mid: #A36CC4;
+  --violet-strong: #7A3F96;
+  --purple-core: #572364;
+  --purple-deep: #2D0F36;
+}
+
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: radial-gradient(circle at 10% 15%, #ffffff 0%, var(--lavender-mist) 40%, var(--lavender-soft) 100%);
+  color: #2d1834;
+  line-height: 1.8;
+}
+
+
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--purple-core);
+  letter-spacing: 1px;
+}
+
+.logo-wordmark {
+  font-family: "Allura", cursive;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+section {
+  padding: 90px 0;
+  background-color: var(--lavender-mist);
+}
+
+.section-light {
+  background-color: var(--lavender-mist);
+}
+
+.section-beige {
+  background-color: var(--lavender-mist);
+}
+
+.section-sand {
+  background-color: var(--lavender-mist);
+}
+
+.section-green {
+  background-color: var(--lavender-mist);
+  color: #2d1834;
+}
+
+.section-green h2 {
+  color: var(--purple-core);
+}
+
+.section-green p {
+  color: #2d1834;
+}
+
+
+.hero {
+  background: var(--lavender-mist);
+  color: #2d1834;
+}
+
+.hero h1 {
+  color: var(--purple-core);
+}
+
+.hero h2,
+.hero h3,
+.hero .logo-wordmark {
+  color: var(--purple-core);
+}
+
+footer .logo-wordmark {
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+.hero .nav-link {
+  color: var(--purple-core);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0.6rem;
+}
+
+.hero .nav-link:hover,
+.hero .nav-link:focus {
+  color: var(--purple-deep);
+  text-decoration: underline;
+}
+
+/*card*/
+.info-card {
+  background-color: #ffffff;
+  padding: 45px;
+  border-radius: 20px;
+  border: 2px solid rgba(87, 35, 100, 0.12);
+  box-shadow: 0 12px 30px rgba(45, 15, 54, 0.1);
+  height: 100%;
+}
+
+.info-card p {
+  font-size: 1rem;
+}
+
+#valores .col-md-3 {
+  font-weight: 700;
+  color: var(--purple-deep);
+  letter-spacing: 0.6px;
+}
+
+/* COLORES */
+.color-box {
+  padding: 50px 10px;
+  border-radius: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  box-shadow: 0 8px 18px rgba(45, 15, 54, 0.2);
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+ul li::before {
+  content: "• ";
+  color: var(--purple-core);
+  font-weight: bold;
+}
+
+/* especifico para el menú horizontal */
+.hero .navbar-nav {
+  align-items: center;
+  gap: 1rem;
+}
+
+/* eliminar el punto y margen en el menú */
+.hero .navbar-nav li {
+  margin-bottom: 0;
+}
+
+.hero .navbar-nav li::before {
+  content: none;
+}
+
+
+
+footer {
+  background-color: var(--purple-deep);
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 64px 0;
+  }
+}
